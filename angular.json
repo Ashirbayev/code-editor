@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ace-builds/css/ace.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/ace-builds/src-noconflict/ace.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -103,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "b05ca1a2-0e6c-4655-81fa-c95878d527e2"
   }
 }

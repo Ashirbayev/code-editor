@@ -1,0 +1,24 @@
+<div class="editor-container">
+  <div class="editor-header">
+    <h2>Редактор кода</h2>
+    <select [(ngModel)]="language" (ngModelChange)="onLanguageChange($event)">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+
+    </select>
+
+  </div>
+  <div class="editor" id="editor" style="height: 300px; width: 100%;">
+    <ngx-ace-editor [(content)]="code"
+                    [mode]="language"
+                    theme="monokai"
+                    [readOnly]="false"
+                    height="300px">
+    </ngx-ace-editor>
+  </div>
+  <button (click)="runCode()">Запустить код</button>
+  <div class="output">
+    <h3>Результат:</h3>
+    <pre>{{ codeOutput }}</pre>
+  </div>
+</div>

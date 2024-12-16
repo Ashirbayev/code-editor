@@ -1,0 +1,23 @@
+.editor-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editor {
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+.output {
+  margin-top: 20px;
+}
